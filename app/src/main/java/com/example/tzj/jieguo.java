@@ -181,7 +181,7 @@ public class jieguo extends AppCompatActivity {
                     xgetJRL.setText("正常");
                 }
                 else
-                    if(0.6<c&&c<=0.7)
+                    if(0.65<c)
                     {
                         JRLdefen = 100;
                         xgetJRL.setText("优秀");
@@ -295,7 +295,7 @@ public class jieguo extends AppCompatActivity {
                 xgetJRL.setText("正常");
             }
             else
-            if(0.6<c&&c<=0.65)
+            if(0.6<c)
             {
                 JRLdefen = 100;
                 xgetJRL.setText("优秀");
