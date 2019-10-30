@@ -13,7 +13,7 @@
         android:layout_weight="0.4"
         android:text="健康报告"
         android:textColor="#ffffff"
-        android:textSize="69sp" />
+        android:textSize="49sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
