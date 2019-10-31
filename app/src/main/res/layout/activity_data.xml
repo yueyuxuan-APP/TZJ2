@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="体重"
-                android:textSize="44sp"
+                android:textSize="34sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center"/>
             <EditText
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="身高"
-                android:textSize="44sp"
+                android:textSize="34sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center"/>
             <EditText
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="性别"
-                android:textSize="44sp"
+                android:textSize="34sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center"/>
             <EditText
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="年龄"
-                android:textSize="44sp"
+                android:textSize="34sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center"/>
             <EditText
@@ -156,7 +156,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:text="开始测试"
-            android:textSize="54sp"
+            android:textSize="34sp"
             android:id="@+id/button"
             android:background="#00000000"
             android:textColor="#ffffff" />

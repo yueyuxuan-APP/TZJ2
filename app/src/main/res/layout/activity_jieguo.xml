@@ -108,7 +108,7 @@
                     android:layout_weight="1"
                     android:text="身高"
                     android:textColor="#f8f8ff"
-                    android:textSize="30sp" />
+                    android:textSize="27sp" />
 
                 <TextView
                     android:id="@+id/text_view002"
@@ -118,7 +118,7 @@
                     android:layout_weight="1.5"
                     android:text="身高"
                     android:textColor="#f8f8ff"
-                    android:textSize="40sp" />
+                    android:textSize="35sp" />
 
                 <TextView
                     android:id="@+id/text_view003"
@@ -128,7 +128,7 @@
                     android:layout_weight="1"
                     android:text="身高"
                     android:textColor="#f8f8ff"
-                    android:textSize="30sp" />
+                    android:textSize="25sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="3sp"
@@ -151,7 +151,7 @@
                     android:layout_weight="1"
                     android:text="体重"
                     android:textColor="#f8f8ff"
-                    android:textSize="30sp" />
+                    android:textSize="27sp" />
 
                 <TextView
                     android:id="@+id/text_view022"
@@ -161,7 +161,7 @@
                     android:layout_weight="1.5"
                     android:text="体重"
                     android:textColor="#f8f8ff"
-                    android:textSize="40sp" />
+                    android:textSize="35sp" />
 
                 <TextView
                     android:id="@+id/text_view023"
@@ -171,7 +171,7 @@
                     android:layout_weight="1"
                     android:text="体重"
                     android:textColor="#f8f8ff"
-                    android:textSize="30sp" />
+                    android:textSize="25sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="3sp"
@@ -194,7 +194,7 @@
                     android:layout_weight="1"
                     android:text="BMI"
                     android:textColor="#f8f8ff"
-                    android:textSize="30sp" />
+                    android:textSize="27sp" />
 
                 <TextView
                     android:id="@+id/text_view012"
@@ -249,7 +249,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="体脂率"
-                android:textSize="34sp" />
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view2"
@@ -257,7 +258,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="b"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view3"
@@ -265,7 +267,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="c"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
 
@@ -290,7 +293,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="水分率"
-                android:textSize="34sp" />
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view5"
@@ -298,7 +302,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="b"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view6"
@@ -306,7 +311,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="c"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
 
@@ -331,7 +337,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="肌肉率"
-                android:textSize="34sp" />
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view8"
@@ -339,7 +346,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="b"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view9"
@@ -347,7 +355,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="c"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
 
@@ -372,7 +381,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="骨质"
-                android:textSize="34sp" />
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view11"
@@ -380,7 +390,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="b"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view12"
@@ -388,7 +399,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="c"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
         </LinearLayout>
 
 
@@ -413,7 +425,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="代谢"
-                android:textSize="34sp" />
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view14"
@@ -421,7 +434,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="b"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/text_view15"
@@ -429,7 +443,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="c"
-                android:textSize="24sp" />
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

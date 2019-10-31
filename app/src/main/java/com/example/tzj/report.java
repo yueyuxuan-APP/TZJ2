@@ -15,6 +15,7 @@ public class report extends AppCompatActivity {
     private TextView get3;
     private TextView get4;
     private TextView get5;
+    //get1-5分别用来在对应位置的textView处显示建议
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,20 +24,20 @@ public class report extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar !=null){
             actionBar.hide();
-        }
+        }//隐藏标题栏
         Bundle bundle = getIntent().getExtras();
         String a = bundle.getString("P1x");
         String b = bundle.getString("P2x");
         String c = bundle.getString("P3x");
         String d = bundle.getString("P4x");
         String e = bundle.getString("P5x");
-
+//获得从jieguo页面传来的评价
         get1 = (TextView)findViewById(R.id.text_view1);
         get2 = (TextView)findViewById(R.id.text_view2);
         get3 = (TextView)findViewById(R.id.text_view3);
         get4 = (TextView)findViewById(R.id.text_view4);
         get5 = (TextView)findViewById(R.id.text_view5);
-
+//对应好位置
         if("过轻".equals(a))
             get1.setText("建议您增加肉制品的摄入量，多到户外进行有氧呼吸的锻炼，可适当多吃一些甜点");
         else
@@ -96,7 +97,9 @@ public class report extends AppCompatActivity {
                 else
                     get5.setText("您的代谢指标不在测试范围内");
 
+//以上为对评价进行判断，并且对应建议
 
+        //下面为button（点击再测一次）设置点击事件为关闭当前页面并跳转到输入面板
         Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,6 +23,7 @@ public class jieguo extends AppCompatActivity {
     private TextView getSUM;
     private TextView getSG;
     private TextView getTZ;
+    //get+指标名，用于显示指标
     private TextView xgetSG;
     private TextView xgetTZ;
     private TextView xgetBMI;
@@ -32,6 +33,7 @@ public class jieguo extends AppCompatActivity {
     private TextView xgetGZ;
     private TextView xgetDX;
     private TextView xgetPJ;
+    //xget+指标名，用于显示评价
     private TextView P1x;
     private TextView P2x;
     private TextView P3x;
@@ -42,6 +44,7 @@ public class jieguo extends AppCompatActivity {
     private String P3;
     private String P4;
     private String P5;
+    //P1x到P5x和P1到P5是用来向report传递数据的
 
 
 
@@ -51,7 +54,7 @@ public class jieguo extends AppCompatActivity {
         setContentView(R.layout.activity_jieguo);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar !=null){
-            actionBar.hide();
+            actionBar.hide();//隐藏标题栏
         }
         getBMI = (TextView)findViewById(R.id.text_view012);
         getTizhilv = (TextView)findViewById(R.id.text_view2);
@@ -71,6 +74,7 @@ public class jieguo extends AppCompatActivity {
         xgetGZ = (TextView)findViewById(R.id.text_view12);
         xgetDX = (TextView)findViewById(R.id.text_view15);
         xgetPJ = (TextView)findViewById(R.id.text_view0002);
+        //对应好显示数据的位置
 
 
 
@@ -84,17 +88,19 @@ public class jieguo extends AppCompatActivity {
         double h = bundle.getDouble("SG");
         double i = bundle.getDouble("TZ");
         int zhishu = bundle.getInt("ZS");
+        //获得从data传来的数据
 
 
-        //评价
+        //以下为根据数据得出评价
         int BMIdefen = 1;
         int TZLdefen = 1;
         int JRLdefen = 1;
         int SFLdefen = 1;
         int GZdefen = 1;
-        int DXdefen = 1;
-        //男
+        int DXdefen = 1;//XXXdefen就是各个指标的得分情况，先给他们赋值为1
 
+
+        //以下是性别为男的指标评价和得分计算，然后把评价放到对应的位置上
         if(zhishu==1)
         {
             double biaozhun = (h*100-80)*0.7;
@@ -209,7 +215,7 @@ public class jieguo extends AppCompatActivity {
                 }
         }
 
-        //女
+        //以下是性别为女的指标评价和得分计算
         if(zhishu==0)
         {
             double biaozhun = (h*100-70)*0.6;
@@ -363,8 +369,13 @@ public class jieguo extends AppCompatActivity {
                             xgetGZ.setText("风险低");
                         }
 
+    //好了，到这里，评价和得分已经搞定了
+
         double SUM = 0;
         SUM = BMIdefen*0.5+JRLdefen*0.1+SFLdefen*0.1+TZLdefen*0.1+GZdefen*0.1+DXdefen*0.1;
+        //计算总得分
+
+
         if(SUM<=100&&SUM>=85)
             xgetPJ.setText("优秀");
         else
@@ -372,9 +383,9 @@ public class jieguo extends AppCompatActivity {
                 xgetPJ.setText("良好");
             else
                 if(SUM<70)
-                    xgetPJ.setText("较差");
+                    xgetPJ.setText("较差");//根据总得分得出评价
 
-
+//下面对从data获得的数据进行处理，把它们转化成一位小数，并将它们在对应位置上显示
         double aa = a;
         BigDecimal aaa = new BigDecimal(aa);
         double aaaa = aaa.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
@@ -423,10 +434,10 @@ public class jieguo extends AppCompatActivity {
         double iiii = iii.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
         getTZ.setText(""+iiii+"kg");
 
-
+//先从对应位置获得评价，再把他们转化成字符型数据
         P1x = (TextView)findViewById(R.id.text_view013);
-        P2x = (TextView)findViewById(R.id.text_view6);
-        P3x = (TextView)findViewById(R.id.text_view9);
+        P2x = (TextView)findViewById(R.id.text_view9);
+        P3x = (TextView)findViewById(R.id.text_view6);
         P4x = (TextView)findViewById(R.id.text_view12);
         P5x = (TextView)findViewById(R.id.text_view15);
         P1 = P1x.getText().toString();
@@ -436,7 +447,7 @@ public class jieguo extends AppCompatActivity {
         P5 = P5x.getText().toString();
 
 
-
+//下面为button1（点击查看健康报告）设置点击事件，把数据传给report，并跳转到repot页面
         Button button1 = (Button)findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -453,6 +464,7 @@ public class jieguo extends AppCompatActivity {
             }
         });
 
+        //下面为button(再测一次)设置点击事件，结束当前界面并且跳转回输入面板
         Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
