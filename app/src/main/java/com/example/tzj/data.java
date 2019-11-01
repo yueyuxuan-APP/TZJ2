@@ -72,7 +72,7 @@ public class data extends AppCompatActivity {
                     if(value1==0||value2==0||value4==0)
                     {
 
-                        Toast.makeText(data.this,"输入数据库不能为0!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(data.this,"输入数据不能为0!",Toast.LENGTH_SHORT).show();
 
                     }//然后对获得的数据进行输入不能为0的限制
                     else
