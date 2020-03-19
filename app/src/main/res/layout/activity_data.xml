@@ -43,7 +43,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text1"
+<<<<<<< HEAD
                 android:hint="请输入您的体重(kg)"
+=======
+                android:hint=""
+>>>>>>> qsh
                 android:singleLine="true"/>
         </LinearLayout>
         <LinearLayout
@@ -71,7 +75,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text2"
+<<<<<<< HEAD
                 android:hint="请输入您的身高(m)"
+=======
+                android:hint=""
+>>>>>>> qsh
                 android:inputType="numberDecimal"
                 android:singleLine="true"/>
         </LinearLayout>
@@ -100,7 +108,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text3"
+<<<<<<< HEAD
                 android:hint="请输入您的性别(男/女）"
+=======
+                android:hint=""
+>>>>>>> qsh
                 android:inputType="textPhonetic"
                 android:singleLine="true"
                 android:digits="男女"
@@ -131,7 +143,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text4"
+<<<<<<< HEAD
                 android:hint="请输入您的年龄"
+=======
+                android:hint=""
+>>>>>>> qsh
                 android:inputType="numberDecimal"
                 android:singleLine="true"/>
         </LinearLayout>
