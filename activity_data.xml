@@ -11,7 +11,7 @@
         android:textColor="#ffffff"
         android:textSize="35sp"
         android:gravity="center"
-        android:background="#add8e6"/>
+        android:background="#cdd5e9"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="5sp"
@@ -28,7 +28,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:background="#add8e6">
+            android:background="#cdd5e9">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -43,12 +43,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text1"
-                android:text="hello world!"
-<<<<<<< HEAD
                 android:hint="请输入您的体重(kg)"
-=======
-                android:hint=""
->>>>>>> qsh
                 android:singleLine="true"/>
         </LinearLayout>
         <LinearLayout
@@ -62,7 +57,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:background="#add8e6">
+            android:background="#cdd5e9">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -76,12 +71,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text2"
-                android:text="hello world!"
-<<<<<<< HEAD
                 android:hint="请输入您的身高(m)"
-=======
-                android:hint=""
->>>>>>> qsh
                 android:inputType="numberDecimal"
                 android:singleLine="true"/>
         </LinearLayout>
@@ -96,7 +86,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:background="#add8e6">
+            android:background="#cdd5e9">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -110,12 +100,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text3"
-                android:text="hello world!"
-<<<<<<< HEAD
                 android:hint="请输入您的性别(男/女）"
-=======
-                android:hint=""
->>>>>>> qsh
                 android:inputType="textPhonetic"
                 android:singleLine="true"
                 android:digits="男女"
@@ -132,7 +117,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:background="#add8e6">
+            android:background="#cdd5e9">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -146,12 +131,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:id="@+id/edit_text4"
-                android:text="hello world!"
-<<<<<<< HEAD
                 android:hint="请输入您的年龄"
-=======
-                android:hint=""
->>>>>>> qsh
                 android:inputType="numberDecimal"
                 android:singleLine="true"/>
         </LinearLayout>
@@ -178,7 +158,7 @@
             android:text="开始测试"
             android:textSize="34sp"
             android:id="@+id/button"
-            android:background="#00000000"
+            android:background="#cdd5e9"
             android:textColor="#ffffff" />
     </LinearLayout>
 
